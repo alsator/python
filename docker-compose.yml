@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  ugolki:
+    tty: true
+    build:
+      context: ./
+    ports:
+      - 5000:5000
+    volumes:
+      - ./projects:/app/projects
+#      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=docker.for.mac.host.internal:0
+#      - DISPLAY=host.docker.internal:0

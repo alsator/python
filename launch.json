@@ -1,0 +1,15 @@
+{
+    "name": "Ugolki",
+    "type": "python",
+    "request": "attach",
+    // "port": 8879,
+    "debugServer": 5000,
+    "host": "172.21.0.2",
+    "pathMappings": [
+        {
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/mnt/extra-addons"
+        }
+    ],
+    "logToFile": true
+}
